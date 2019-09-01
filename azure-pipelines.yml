@@ -20,5 +20,5 @@ steps:
     path: $(MAVEN_CACHE_FOLDER)
   displayName: Cache Maven local repo
 
-- script: mvn dependency:resolve
+- script: mvn dependency:resolve || echo "ignore errors"
 
